@@ -1,0 +1,15 @@
+int mySqrt(int x) {
+    int temp=0;
+    int val=0;
+    for(long i=0;i<=x;i++){
+        if((i*i)==x){
+            temp=i;
+            break;
+        }
+        else if((i*i)>x){
+            temp=i-1;
+            break;
+        }
+    }
+    return temp;
+}
