@@ -1,0 +1,16 @@
+bool isPalindrome(int x) {
+    int sum;
+    double pal=0;
+    long ori=x;
+    while(x>0){
+        sum=x%10;
+        pal=pal*10+sum;
+        x=x/10;
+    }
+    if(ori==pal){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
