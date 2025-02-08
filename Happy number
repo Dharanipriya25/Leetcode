@@ -1,0 +1,19 @@
+bool isHappy(int n) {
+    long num=0;
+    long sq=0;
+    long v=n;;
+    while(v>=1){
+        num=v%10;
+        sq=sq+num*num;
+        v=v/10;
+    }
+    if(sq>=10){
+        return isHappy(sq);
+    }
+    else if(sq==1 || sq==7){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
