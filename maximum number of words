@@ -1,0 +1,13 @@
+class Solution {
+    public int mostWordsFound(String[] sentences) {
+        int length=0;
+        for(String str:sentences){
+            String[] sp=str.split(" ");
+            int count=sp.length;
+            if(length<count){
+                length=count;
+            }
+        }
+        return length;
+    }
+}
